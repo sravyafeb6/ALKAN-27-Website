@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Research</title>
+    <style>
+        @import url("https://use.typekit.net/qok3wyb.css");
+
+        
+        /* CSS styles for the container element */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1D1D1D;
+            text-align: left;
+            font-family: "poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-left: 20px;
+            margin-top: 10px;
+            flex-grow: 1;
+        }
+        
+        
+        
+        body {
+            background-color: #E0DAC8;
+        }
+        
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+  
+    .buttons a {
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin-right: 15px;
+        font-family: Bilo;
+    }
+  
+    .researchbutton {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+  
+    .buttons a:not(.researchbutton) {
+        background-color: black;
+        color: white;
+    }
+  
+    .buttons a:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: background-color 0.25s, box-shadow 0.25s ease-in-out;
+    }
+        
+        
+        .searchbar {
+            
+            max-width: 300px;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden
+            border: none;
+            align-items: center; 
+        }
+
+        .searchbar__input {
+            flex-grow: 1;
+            padding: 12px;
+            outline: none;
+            border: 1px solid #1D1D1D;
+            border-radius: 20px 0px 0px 20px;
+            background: white;
+            transition: background 0.25s, box-shadow 0.25s ease-in-out;
+            margin-right: 0;
+        }
+
+        .searchbar__input:focus {
+            background: #1D1D1D;
+            box-shadow: 0 0 2px balck;
+        }
+
+       .searchbar__button {
+            width: 40px;
+            height: 39px;
+            background: #1D1D1D;
+            color: #FFFFF0;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+            user-select: none;
+       }
+
+
+       .container {
+  position: relative;
+  height: 100vh;
+}
+
+.swiggly {
+    display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20rem;
+}
+
+
+.graphs {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+}
+
+.li1 {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: border-top-left-radius;
+  align-items: center;
+  font-size: 24px;
+  font-family: Bilo;
+  list-style-type: none;  
+  padding-left: 10rem;
+  padding-top: 6rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+}
+
+.li2 {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-size: 24px;
+  font-family: Bilo;
+  list-style-type: none; 
+  padding-top: 17rem;
+  padding-left: 9rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+
+}
+
+.li3 {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  font-size: 24px;
+  font-family: Bilo;
+  list-style-type: none; 
+  padding-top: 40rem;
+  padding-left: 45rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+
+}
+
+.li4 {
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  font-size: 24px;
+  font-family: Bilo;
+  list-style-type: none; 
+  padding-top: 55rem;
+  padding-left: 3rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <div class="header-container">
+        <h1>Research</h1>
+
+        <div class="buttons">
+            <a href="home.html" class="homebutton">Home</a>
+            <a href="research.html" class="researchbutton">Research</a>
+            <a href="design.html" class="designbutton">Design Process</a>
+            <a href="finaldesign.html" class="finaldesignbutton">Final Design</a>
+            
+            <form action="#" method="get" class="searchbar">
+                <input type="text" class="searchbar__input" name="search" placeholder="Search...">
+                <button type="submit" class="searchbar__button">
+                  <i class="material-icons">search</i>
+                </button>
+              </form>
+            
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="graph">
+            <img src="graphs.png" style="width: 30%; height: 30%;">
+        </div>
+
+        <div class="swiggly">
+          <img src="swiggly.png" style="width: 90%; height: 90%;">
+        </div>
+
+     
+       
+        <div class="li1">
+            <li>Recognized that there was a significant lack of recycling <br> within my immediate community (located in a remote area)</li>
+          </div>
+        
+          <div class="li2">
+            <li>Conducted surveys to better understand the reasons as<br>to why recycling was not taking place in rural/remote areas</li>
+          </div>
+
+          <div class="li3">
+            <li>From survey results, we concluded that the main cause of <br> lack of recycling was lack of nearby recycling facilities</li>
+          </div>
+
+          <div class="li4">
+            <li>Started developing a solution <br> to make recycling more accessible</li>
+          </div>
+      </div>
+      
+      
+      
+      
+    </body>
+    </html>

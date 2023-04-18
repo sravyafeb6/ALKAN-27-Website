@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Alkan-27</title>
+    <style>
+        @import url("https://use.typekit.net/qok3wyb.css");
+
+        
+        /* CSS styles for the container element */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1D1D1D;
+            text-align: left;
+            font-family: "poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        .process img {
+            width: 40%; /* changed from 30% */
+            height: 40%;
+            border-radius: 5px;
+            margin-right: 50px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            margin-left: 150px
+            
+        }
+
+        .process-container {
+            display: flex;
+            align-items: center;
+            
+        }
+         
+        .process ul{
+            width: 70%
+            
+        }
+
+        .process {
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            line-height: 1.5;
+            font-family: Bilo;
+            font-size: 20px; 
+            margin-top: 10px;
+        }
+
+        .process li::marker {
+        font-size: 14px;
+        }
+
+        li{
+            margin-bottom: 20px;
+        }
+
+        body {
+            background-color: #E0DAC8;
+        }
+        
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .buttons a {
+            color: blue; 
+            text-decoration: none;
+            background-color: #1D1D1D;
+            color: #FFFFF0;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-right: 15px;
+            font-family: Bilo;
+            margin-top: none;
+        }
+            
+        .buttons a:hover {
+            background-color: white;
+            color: #1D1D1D;
+            border: 1px solid #1D1D1D;
+            transition: background-color 0.25s, box-shadow 0.25s ease-in-out;
+        }
+
+        .container-yay {
+            border: 1px solid #1D1D1D;
+            padding: 10px;
+            
+        }
+
+        .text {
+            line-height: 1.5;
+            font-family: Bilo;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .searchbar {
+            
+            max-width: 300px;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden
+            border: none;
+            align-items: center; 
+        }
+
+        .searchbar__input {
+            flex-grow: 1;
+            padding: 12px;
+            outline: none;
+            border: 1px solid #1D1D1D;
+            border-radius: 20px 0px 0px 20px;
+            background: white;
+            transition: background 0.25s, box-shadow 0.25s ease-in-out;
+            margin-right: 0;
+        }
+
+        .searchbar__input:focus {
+            background: #1D1D1D;
+            box-shadow: 0 0 2px balck;
+        }
+
+       .searchbar__button {
+            width: 40px;
+            height: 39px;
+            background: #1D1D1D;
+            color: #FFFFF0;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+            user-select: none;
+       }
+       
+       .logo img {
+            width: 35px;
+            padding: 20px
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="header-container">
+        <div class="logo">
+            <img src= "logo.png">
+        </div>
+
+        <h1>ALKAN-27</h1>
+
+        <div class="buttons">
+            <a href="home.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="design.html">Design Process</a>
+            <a href="finaldesign.html">Final Design</a>
+            
+            
+            <form action="#" method="get" class="searchbar">
+                <input type="text" class="searchbar__input" name="search" placeholder="Search...">
+                <button type="submit" class="searchbar__button">
+                  <i class="material-icons">search</i>
+                </button>
+              </form>
+            
+            </div>
+            
+        </div>
+    </div>
+        
+
+    <div class="process">
+        
+        <ul>
+            <li> A waste sorting mechanism that utilizes sound signatures to distinguish aluminum cans from other types of waste. The system rewards users with monetary incentives when they deposit aluminum cans, increasing recycling efficiency and accessibility, particularly in remote areas, and promoting recycling.</li>
+            <li> Alkan-27 was entered into the NM Governor’s STEM Challenge. The objective of the competition was to address the question, “How would you use science technology engineering and math (STEM) to make life better for your family, community, state, or country?” </li>
+            <li> Designed solution must be under $500. </li>
+            <li> Awarded state championship sponsored by Boeing.</li>
+            <li> Served as the lead engineer, programmer, and team manager.</li>
+            </ul>
+            <img src="box.jpg">
+        </div>
+    </body>
+    </html>
